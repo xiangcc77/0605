@@ -26,10 +26,14 @@ const setUSerInfo = () => {
 // })
 
 //2.监视多个数据
-watch([count,name],(newArr,oldArr) => {
-    console.log(newArr, oldArr)
-},{
-    immediate: true
+// watch([count,name],(newArr,oldArr) => {
+//     console.log(newArr, oldArr)
+// },{
+//     immediate: true
+// })
+
+watch(userInfo,(newValue) =>{
+    console.log(newValue)
 })
 
 </script>
